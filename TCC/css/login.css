@@ -1,0 +1,64 @@
+body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #03989E;
+        }
+        div{
+           background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: #DCDCDC;
+			text-align: center;
+        }
+        input{
+            padding: 15px;
+            outline: none;
+            font-size: 15px;
+        }
+        .button{
+            background-color: #43CCD1;
+            padding: 15px;
+            width: 75%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+			cursor: pointer;
+			border: none;
+            
+        }
+        .button:hover{
+            background-color: #DCDCDC;
+            cursor: pointer;
+        }
+	.nome{
+		border: 1px solid #ccc;
+		outline: none
+	}
+	
+	.senha{
+		border: 1px solid #ccc;
+		outline: none
+	}
+
+    .ancora{
+		color: #ccc;
+	}
+	
+	.acao{
+		border: none;
+		font-size: 15px;
+	}
+	
+	.logo img{
+		width: 65px;
+		height: auto;
+		vertical-align: top;
+
+	}
+	.login img{
+		width: 25px;
+		height: auto;
+	}

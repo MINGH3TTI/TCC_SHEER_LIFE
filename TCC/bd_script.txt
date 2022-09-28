@@ -1,0 +1,61 @@
+CREATE DATABASE projeto;
+
+USE projeto;
+
+CREATE TABLE usuario(
+
+id_usuario INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nome_usuario VARCHAR (45) NOT NULL, 
+email_usuario VARCHAR (45) NOT NULL,
+senha_usuario VARCHAR (10) NOT NULL,
+telefone_usuario VARCHAR (20) NOT NULL,
+data_usuario DATE NOT NULL,
+genero_usuario VARCHAR (15) NOT NULL
+
+
+/*cod_ficha*/
+);
+
+CREATE TABLE motivacao(
+
+id_motivacao INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+frase VARCHAR (45) NOT NULL
+
+/*cod_ficha*/
+);
+
+CREATE TABLE recomendacao(
+
+id_recomendacao INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+filmes VARCHAR (25) NOT NULL,
+series VARCHAR (25) NOT NULL,
+livros VARCHAR (25) NOT NULL,
+musicas VARCHAR (25) NOT NULL
+
+/*cod_ficha*/
+);
+
+CREATE TABLE ficha(
+
+id_ficha INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+vicio_ficha VARCHAR (25) NOT NULL,
+motivo_ficha VARCHAR (40) NOT NULL
+
+/*cod_usuario, cod_temporizador*/
+);
+
+CREATE TABLE temporizador(
+
+id_temporizador INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+cronometro VARCHAR (25) NOT NULL
+
+/*cod_ficha*/
+);
+
+CREATE TABLE progresso(
+
+id_progresso INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+dias_progresso VARCHAR (10) NOT NULL
+
+/*cod_temporizador*/
+);
