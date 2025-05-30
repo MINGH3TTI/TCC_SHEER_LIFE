@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #006366;
+  
+}
+div {
+  background-color: white;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 1.5rem;
+  color: rgb(145, 145, 145);
+  text-align: center;
+}
+input {
+  padding: 15px;
+  padding-right: 100px;
+  margin: 10px;
+  outline: none;
+  font-size: 15px;
+  border-color: rgba(0, 0, 0, 0.185);
+}
+.button {
+  background-color: #03989e;
+  padding: 15px;
+  width: 75%;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+}
+.button:hover {
+  background-color: #b4b4b4;
+  cursor: pointer;
+}
+.nome {
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.senha {
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.ancora {
+  color: rgb(129, 129, 129);
+  font-size: 15px;
+}
+
+.ancora:hover {
+  color: #00a6ac;
+}
+
+.alertaFeliz {
+  color: rgb(0, 255, 98);
+  background-color: rgba(0, 0, 255, 0);
+  animation: alerta-opacity 1s ease 2.3s forwards;
+  position: absolute;
+  top: 31%;
+  padding: 0%;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+.alerta {
+  color: rgb(255, 0, 0);
+  background-color: rgba(0, 0, 255, 0);
+  animation: alerta-opacity 1s ease 2.3s forwards;
+  position: absolute;
+  top: 27%;
+  padding: 0%;
+  border-radius: 15px;
+  font-size: 16px;
+  opacity: 100%;
+}
+
+@keyframes alerta-opacity {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+.img {
+  padding: 20px;
+  position: fixed;
+  max-width: 12%;
+  max-height: 30%;
+  object-fit: contain;
+  left: 42%;
+  right: 58%;
+  bottom: 70%;
+}
+
+.bg {
+  position: fixed;
+}

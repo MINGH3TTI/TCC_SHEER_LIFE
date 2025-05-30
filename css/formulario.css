@@ -1,0 +1,189 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #006366;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+textarea {
+  margin: 5px;
+}
+
+form {
+  margin: unset;
+}
+
+.erro {
+  z-index: 9999;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+  animation: erro-opacity 1s ease 5s forwards;
+  opacity: 100%;
+  background-color: #ee6969;
+  color: white;
+  border-radius: 3rem;
+  width: fit-content;
+  background-color: #ee6969;
+  color: white;
+  border-radius: 3rem;
+}
+@keyframes erro-opacity {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+.box {
+  color: #016c70;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem;
+  
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 1.5rem;
+  width: 40ch;
+}
+
+.titulo {
+  color: rgb(145, 145, 145);
+  text-align: center;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #dcdcdc;
+  outline: none;
+  color: #696969;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 1px;
+  margin: 5px;
+}
+
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+  top: -20px;
+  font-size: 12px;
+  color: #03989e;
+}
+
+#data_nascimento {
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+#submit {
+  background-color: #03989e;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#submit:hover {
+  background-color: #b4b4b4;
+  cursor: pointer;
+}
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #03989e;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 6px 15px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #016c70;
+  top: 100%;
+  left: 2%;
+  right: 2%;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.ancora {
+  color: rgb(129, 129, 129);
+  position: relative;
+  left: 35%;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.ancora:hover {
+  color: #00a6ac;
+}
+.bg {
+  width: 100%;
+  bottom: 0%;
+  position: absolute;
+}

@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #006366;
+}
+div{
+    background-color: white;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     padding: 40px;
+     padding-left: 70px;
+     padding-right: 70px;
+     border-radius: 3px;
+     color: rgb(145, 145, 145);
+     text-align: center;
+ }
+
+        button{
+            background-color: #03989E;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            outline: none;
+            margin: 3px;
+        }
+        button:hover{
+            
+            opacity: 70%;
+            cursor: pointer;
+        }
+        .img{
+            height: 250px;
+            position: absolute;
+            right:41.5%;
+            top: 0%;
+        }
+        .bg{
+            width: 100%;
+            position: fixed;
+        }
